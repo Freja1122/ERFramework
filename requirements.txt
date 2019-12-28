@@ -1,0 +1,21 @@
+keras
+tensorflow-gpu
+tensorflow
+sklearn
+pandas
+simplejson
+opencv-python
+torchvision
+librosa
+matplotlib
+imutils
+cmake
+protobuf
+dlib
+ffmpeg
+pyaudio
+zhon
+pkuseg -i https://pypi.tuna.tsinghua.edu.cn/simple
+SpeechRecognition
+face_recognition
+baidu-aip

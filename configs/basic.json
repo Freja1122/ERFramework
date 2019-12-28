@@ -1,0 +1,140 @@
+{
+  "data_folder": "data/lovehouse",
+  "check_every_modal": "false",
+  "dataset": "lovehouse",
+  "label_extract": {
+    "file_path": "data/friends/test_sent_emo.csv"
+  },
+  "demo": {
+    "smooth": "false",
+    "smooth_r": 0.5,
+    "multi_person": "true",
+    "ensemble_smooth": "true",
+    "show_box": "false",
+    "target_name": "none",
+    "data_folder": "data/demo",
+    "frame_window": 10,
+    "display": {
+      "blank": 60,
+      "face": {
+        "h": 200,
+        "w": 150,
+        "x": 13,
+        "y": 25
+      },
+      "ensemble": {
+        "h": 200,
+        "w": 150,
+        "x": 1000,
+        "y": 25
+      },
+      "audio": {
+        "h": 200,
+        "w": 150
+      },
+      "text": {
+        "h": 70,
+        "w": 150
+      },
+      "note": {
+      }
+    },
+    "display_static": {
+      "blank": 60,
+      "face": {
+        "h": 120,
+        "w": 150,
+        "x": 13,
+        "y": 25
+      },
+      "ensemble": {
+        "h": 120,
+        "w": 150,
+        "x": 600,
+        "y": 25
+      },
+      "weight": {
+        "h": 120,
+        "w": 150
+      },
+      "audio": {
+        "h": 120,
+        "w": 150
+      },
+      "text": {
+        "h": 120,
+        "w": 150
+      },
+      "note": {
+      }
+    }
+  },
+  "modalities": {
+    "video": {
+      "state": "true",
+      "frames_cut": 7,
+      "suffix": [".webm",".mp4"]
+    },
+    "face": {
+      "state": "extract",
+      "model_info": {
+        "model_name": ["face_and_emotion"],
+        "default": {
+          "pretrained_model": "pretrained_models/face/base_emotion_classification_model",
+          "input": "image",
+          "conf_threshold": 0.8,
+          "fps": 25,
+          "show": "false",
+          "model_file": "pretrained_models/face/opencv_face_detector_uint8.pb",
+          "config_file": "pretrained_models/face/opencv_face_detector.pbtxt",
+          "face_lamdmark_model": "pretrained_models/face/shape_predictor_68_face_landmarks.dat"
+        },
+        "face_and_emotion": {
+          "emotion_model_path": "pretrained_models/face/emotion_model.hdf5",
+          "labels": "fer2013",
+          "know_face_dir": "data/face/knownface",
+          "face_lamdmark_model": "pretrained_models/face/shape_predictor_68_face_landmarks.dat"
+        }
+      }
+    },
+    "audio": {
+      "state": "extract",
+      "model_info": {
+        "model_name": ["default"],
+        "default": {
+          "pretrained_model": "pretrained_models/audio/Emotion_Voice_Detection_Model.h5"
+        }
+      }
+    },
+    "text": {
+      "state": "extract",
+      "model_info": {
+        "model_name": ["default"],
+        "default": {
+        }
+      }
+    },
+    "pose": {
+      "state": "false"
+    }
+  },
+  "ensemble": {
+    "method": {
+      "basic": "false",
+      "global_max_pooling": "false",
+      "exception_max_pooling": "false",
+      "exception_voting": "true"
+    }
+  },
+  "caches": {
+    "modalities_dict": {
+      "state": "true",
+      "filename": "caches/pkl/lovehouse_modalities_dict.pkl"
+    },
+    "modal_data": {
+      "state": "true",
+      "filename": "caches/pkl/lovehouse_modal_data.pkl"
+    },
+    "run": "false"
+  }
+}

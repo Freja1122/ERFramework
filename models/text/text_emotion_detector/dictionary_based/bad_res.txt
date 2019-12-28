@@ -1,0 +1,26 @@
+happy : sad : 我生平最高兴的，就是我答应帮助人家去做的事，自己不仅是完成了，而且比他们要求的做得更好
+happy : neutral : 今天天气还不错
+happy : neutral : 你太棒了吧！
+happy : neutral : 生活如此多娇～
+angry : neutral : 不理你了
+angry : neutral : 我现在气得不行
+angry : neutral : 我真他妈手贱，觉得系统好久没有换了，重装一遍。
+angry : neutral : 上当的多是退休老人，简直就是坑人不偿命！
+sad : neutral : 有些电影为什么总是那么想让人哭
+sad : neutral : 我再也不那么自信的说自己会养狗了，强烈的挫败感啊。
+sad : neutral : 老爸都怪你！！！！
+sad : neutral : 该离开的离开了，不该离开的也离开了。
+sad : neutral : 听不到你那答复时，心里却像针扎一样的痛。
+sad : neutral : 我连它的最后一面都没见到，心里突然觉得好难受
+sad : happy : 放弃，也许是我唯一能给自己的解脱，埋葬自己所有的好。
+sad : neutral : 曾经有一个别墅摆放在我面前 我没有好好争取珍惜 当我失去的时候我才后悔莫及
+fear : disgust : 明天就考试了，莫名的紧张，甚至开始怀疑自己
+disgust : neutral : 你烦不烦啊
+disgust : neutral : 忍了一下午了，你们始终跟我装死。
+disgust : sad : 我没经历过比赛，但是我实在是不理解不喜欢还要去谩骂的心态。
+disgust : neutral : 很无语!
+disgust : neutral : 真可笑，他居然以为只要说公司根本没做帐就没人能追究他。
+disgust : fear : 我就会紧张，害怕，哭泣，腿轮，心跳加速，语无伦次，一直哭一直哭
+surprise : neutral : 天呐，吓死我了
+surprise : neutral : 没想到你居然是这样的人
+surprise : neutral : 惊呆了，怎么会这样？
